@@ -1,0 +1,7 @@
+Host = "127.0.0.1"
+Port = 3306
+User = "root"
+Password = "123456" 
+Database = "blog"
+Outdir = "./model/data"
+Type = "mysql"
