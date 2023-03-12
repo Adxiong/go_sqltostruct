@@ -4,7 +4,7 @@
  * @Author: Adxiong
  * @Date: 2023-01-15 21:22:53
  * @LastEditors: Adxiong
- * @LastEditTime: 2023-01-16 00:08:38
+ * @LastEditTime: 2023-01-20 22:49:32
  */
 package cmd
 
@@ -33,10 +33,10 @@ func Execute() {
 
 	errReadConf := readConfig(customConfPath)
 	if errReadConf != nil {
-		fmt.Printf("%s", errReadConf.Error())
+		fmt.Printf("%s\n", errReadConf.Error())
 	}
 
-	fmt.Printf("%+v", resource.FlagConf)
+	fmt.Printf("%+v\n", resource.FlagConf)
 
 	var modeldb model.IModel
 	switch resource.FlagConf.Type {
@@ -49,7 +49,7 @@ func Execute() {
 		return
 	}
 
-	// info := modeldb.GenModel()
+	modeldb.GenModel()
 
 	// model.Generate(info)
 

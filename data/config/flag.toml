@@ -5,3 +5,4 @@ Password = "123456"
 Database = "blog"
 Outdir = "./model/data"
 Type = "mysql"
+TableList = [] #可选表
